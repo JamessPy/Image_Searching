@@ -1,0 +1,10 @@
+INSTALL
+pip install numpy
+pip install imutils
+pip install opencv-python
+pip install opencv-python-headless
+
+
+RUN
+python index.py --dataset dataset --index index.csv
+python search.py --index index.csv --query queries/ben.jpg --result-path dataset

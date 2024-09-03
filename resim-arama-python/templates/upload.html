@@ -1,0 +1,20 @@
+{% extends "base.html" %}
+{% block title%}
+Upload Page
+{% endblock %}
+
+{% block content%}
+<body class="text-center">
+<div class="content">
+    <table class="table table-hover table-dark" conteiner>
+        <form id="upload-form" action="{{ url_for('upload') }}" method="POST" enctype="multipart/form-data">
+
+
+            <input type="file" name="file" accept="image/*">
+            <input type="submit" value="send">
+
+        </form>
+    </table>
+</div>
+</body>
+{% endblock %}

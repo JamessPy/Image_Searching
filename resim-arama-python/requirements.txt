@@ -1,0 +1,8 @@
+argparse
+cv2
+numpy
+imutils
+csv
+glob
+os
+flask
